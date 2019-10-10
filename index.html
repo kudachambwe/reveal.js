@@ -36,6 +36,7 @@
 		<div class="slides">
 
 			<section>
+				<img class="_image" src="images/header.png" width="30%"alt="header">
 				<h3>Hvordan lage iOS apper? + A.I.</h3>
 				<p><strong class="mustard">The Hotdog or Not-Hotdog App</strong></p>
 				<p class="smaller">Presentert av <a href="mailto:kudakwashe.chambwe@bouvet.no">Kudakwashe K. Chambwe</a></p>
@@ -46,7 +47,7 @@
 			</section>
 
 			<section>
-				<h4>You guessed it!</h4>
+				<h4 class="mustard">You guessed it!</h4>
 				<img class="_image" src="images/gifs/its-an-app.gif" alt="gif">
 			</section>
 
@@ -101,7 +102,7 @@
 				</section>
 
 				<section>
-					<h3>So...</h3>
+					<h3 class="mustard">So...</h3>
 					<img class="_image" src="images/gifs/lets-begin.gif" alt="gif">
 				</section>
 
@@ -138,16 +139,71 @@
 				</section>
 
 				<section>
-						<img src="images/How-to-app.png" class="_image"  alt="logo">
+					<img src="images/How-to-app.png" class="_image"  alt="logo">
 				</section>
 
 
 				<section>
-						<h3>Introduksjon</h3>
-						<p class="mustard">Teknologier & Rammeverk</p>
+					<h3>Introduksjon</h3>
+					<p class="mustard">Teknologier & Rammeverk</p>
+				</section>
+
+					<section>
+						<h3>Konsepter</h3>
+						<div class="fragment zoom-in">
+							<h5 class="mustard">Machine Learning (ML)</h5>
+							<ul class="very-small-font">
+								<li>Spesialisering innen AI.</li>
+								<li>Datamaskinen skal lære seg og ta valg ut i fra store mengder data.</li>
+								<li><strong class="mustard">"Learning on the go". </strong></li>
+								<li>Målet - lære seg selv automatisk, og predikere basert på input</li>
+								<li>ML er bygd på <strong class="mustard">Data</strong> - God data = God model</li>
+							</ul>
+						</div>
+						<div class="fragment zoom-in">
+							<img src="images/image-classifier.png" class="_image" width="40%" alt="logo">
+							<h5 class="mustard">Create ML</h5>
+							<ul class=" ery-small-font">
+								<li><strong class="mustard">Rammeverk</strong> for å lage modeller i Swift & Xcode</li>
+								<li>Trene modeller til å gjenkjenne for eks. hotdogs</li>
+								<li>Integreres inn i appen med <strong class="mustard">Core ML</strong></li>
+							</ul>
+						</div>
 					</section>
- 
+
+					<section>
+						<h3>Konsepter</h3>
+						<img src="images/coreml.png" class="_image" width="50%" alt="logo">
+						<div class="fragment zoom-in">
+							<h5 class="mustard">Core ML</h5>
+							<ul class=" very-small-font">
+								<li><strong class="mustard">Rammeverk</strong> for å integrere modeller Apper.</li>
+								<li>Uniform måte å representere modeller.</li>
+								<li>API for appen for re-trening, fin-justere modeller (på app!)</li>
+							</ul>
+						</div>
+						<br>
+						<div class="fragment zoom-in">
+							<h6 class="mustard">Hvorfor trenger vi Core ML?</h6>
+							<ul class=" very-small-font">
+								<li>Telefoner har <u class="mustard">begrenset </u> ressurser (RAM, ytelse, strøm etc.)</li>
+								<li>Core ML - optimaliserer ressursbruken og ytelsen.</li>
+								<li>Core ML - begrenser avhengighet av nettverk.</li>
+								<li>Core ML - Sørger for at brukerdata forblir på tellefonen. ("What happens in app..")</li>
+							</ul>
+						</div>
+					</section>
+
+
+					<section>
+						<h3>Oppsumering</h3>
+						<img src="images/createml.png" class="fragment _image" width="50%" alt="logo">
+						<img src="images/coreml.png" class=" fragment _image" width="80%" alt="logo">
+					</section>
+
+
 			</section>
+
 
 
 			<section id="section-2">
@@ -210,6 +266,94 @@
 			</section>
 
 
+			<section id="section-3">
+					
+				<section>
+					<h2>Gjennomføring</h2>
+				</section>
+	
+				<section>
+					<h3>Gjennomføring</h3>
+					<p class="mustard"> Hvordan predikerer vi?</p>
+				</section>
+
+				<section>
+					<h3 class="mustard">Steg 1: Finn Modell</h3>
+					<img class="_image" src="images/Resnet50.png" height="300" alt="screen">	
+					<img  class="fragment _image" src="images/Resnet50-img.png" width="100%" alt="screen">	
+				</section>
+
+				<section>
+					<h3 class="mustard">Steg 2: Opprett request</h3>	
+					<img  class="fragment _image" src="images/request-code.png" width="100%" alt="screen">	
+				</section>
+
+				<section>
+					<h3 class="mustard">Steg 3: Prosessere resultat</h3>	
+					<img  class="fragment _image" src="images/processing-code.png" width="80%" alt="screen">	
+				</section>
+
+
+				<section>
+					<h3>Gjennomføring</h3>
+					<p class="mustard"> Demo!</p>
+					<img  class="fragment _image" src="images/gifs/happy.gif" alt="screen">
+				</section>
+
+			</section> 
+			<!-- End section -->
+
+
+			<section id="section-4">
+
+				<section>
+					<h2>Avslutning</h2>
+				</section>
+	
+				<section>
+					<h3>Avslutning</h3>
+					<p class="mustard"> Hva mer?</p>
+				</section>
+
+
+				<section>
+					<h4>Hva mer kan vi gjøre med ML i app?</h4>
+					<div class="fragment zoom-in">
+						<h5 class="mustard">ML x Helse</h5>
+						<ul class=" very-small-font">
+							<li>ML + diagnose = fremtiden!</li>
+							<li>Forenkle og tilgjengeligjøre behandling av sykdommer</li>
+							<li>Et helsesystem er luksus mange steder i verden</li>
+							<li>Eksempler på brukstilfeller:
+								<ul>
+									<li>Predikere og detektere kreft</li>
+									<li>Diagnose av hjertesykdommer</li>
+									<li>Tilpasse behandling av pasienter basert på data</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<br>
+					<div class="fragment zoom-in">
+						<h6 class="mustard">APP x ML eksempler</h6>
+						<ul class="very-small-font">
+							<li><u class="mustard">Snapchat</u> (Filter = ML)</li>
+							<li><u class="mustard">Tinder</u> (Smarte bilder = ML)</li>
+							<li><u class="mustard">Netflix</u> (Anbefalinger = ML)</li>
+							<li><u class="mustard">Facebook</u> (Bilder/ansiktsgjenkjenning = ML)</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h3>Takk for meg!</h3>
+					<h6 class="mustard">Spør hvis du lurer på noe :) </h6>
+					<img  class="_image" src="images/gifs/ta-kontakt.gif" width="80%" alt="screen">
+				</section>
+
+				<!-- End section -->
+			</section>
+
 
 		</div>
 	</div>
@@ -223,7 +367,7 @@
 		// - https://github.com/hakimel/reveal.js#configuration
 		// - https://github.com/hakimel/reveal.js#dependencies
 		Reveal.initialize({
-			controls: true,
+			controls: false ,
 			progress: true,
 			history: true,
 			center: true,
