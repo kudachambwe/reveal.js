@@ -17,6 +17,15 @@ img {
     font-size: medium;
 }
 
+.no-margin {
+    margin: 0 !important; 
+}
+
+.full-width { 
+    width: 100% !important;
+    max-width: 100% !important; 
+}
+
 ._image {
     background: none !important;
     border: none !important;
